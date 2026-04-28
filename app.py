@@ -4,7 +4,7 @@ import threading
 import socket
 from devices import checar_dispositivo, scan_network
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="page", static_folder="css")
 
 # Configuração: rede a ser escaneada automaticamente (se None, será detectada)
 SUBNET = None
